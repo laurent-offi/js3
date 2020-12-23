@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Mon alerte Js</title>
+
+	</head>
+	<body>
+
+		<h2>Petit fenêtre s'ouvrant après un clic.</h2>
+
+		<button onclick="SetfirstName()">Définir un nom</button>
+		
+		<script>
+
+			function SetfirstName() {
+			  	let firstName = prompt("Entrez votre prénom :");
+			  	if(firstName == null || firstName == "") {
+			  		window.alert("Oh, vous n'avez pas de prénom :(");
+			  	} else {
+			 		window.alert("Bonjour, " + firstName + ".");
+				}
+			}
+
+		</script>
+
+	</body>
+</html> 
